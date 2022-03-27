@@ -1,0 +1,10 @@
+[Unit]
+Description=Send Kubernetes Events to Skype
+
+[Service]
+Type=simple
+StandardOutput=journal
+ExecStart=/home/minhaz/.local/bin/kubesky.py
+
+[Install]
+WantedBy=default.target
